@@ -13,7 +13,7 @@ class ColorListTile extends StatelessWidget {
           Image(
             image: NetworkImage(imageUrl),
           ),
-          Align(alignment: Alignment.centerLeft,child: Text(descText, overflow: TextOverflow.ellipsis, maxLines: 1))
+          Flexible(child: Text(descText, overflow: TextOverflow.ellipsis, maxLines: 1)),
         ],
       ),
     );

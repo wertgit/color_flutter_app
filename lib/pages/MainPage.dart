@@ -34,21 +34,19 @@ class MainPage extends StatelessWidget {
             ),
           ),
           Expanded(
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB (24,16,24,0),
-              child: GridView.builder(
-                shrinkWrap: true,
-                itemCount: colorsList.length,
-                itemBuilder: (BuildContext context, int position) {
-                  return ColorListTile(
-                      colorsList[position].thumbnailUrl, colorsList[position].title);
-                },
-                gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisSpacing: 6,
-                    mainAxisSpacing: 6,
-                    childAspectRatio: MediaQuery.of(context).orientation == Orientation.portrait? 0.9:0.85,
-                    crossAxisCount: MediaQuery.of(context).orientation == Orientation.portrait? 2:5),
-              ),
+            child: GridView.builder(
+              padding: EdgeInsets.fromLTRB(50, 16, 50, 0),
+              shrinkWrap: true,
+              itemCount: colorsList.length,
+              itemBuilder: (BuildContext context, int position) {
+                return ColorListTile(
+                    colorsList[position].thumbnailUrl, colorsList[position].title);
+              },
+              gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisSpacing: 6,
+                  mainAxisSpacing: 6,
+                  childAspectRatio: MediaQuery.of(context).orientation == Orientation.portrait? 0.9:0.85,
+                  crossAxisCount: MediaQuery.of(context).orientation == Orientation.portrait? 2:5),
             ),
           ),
         ]));

@@ -1,16 +1,12 @@
-# color_flutter_app
+# Color Flutter App
 
-A Flutter Exercise application.
+A Flutter application that fetches a list of colors and displays them in a Grid. The app written in Dart and uses the flutter SDK.
 
-## Getting Started
+## About This Project
+The focus of this project is to create an app that comprises of toggle button and when pressed fetches a list of colors and displays them in a Grid.
+<br/>The Grid must be responsive and be able to change based on the user scren orientation.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Libraries and Techniques Used
+* Provider for state managment. 
+* http for fetching data from network.
+* Fimber for debugging and logs.
